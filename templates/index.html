@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+{% block content%}
+{% for line in zagolovoc %}
+    <span class="text-black-50 col-12 col-md-6"><h1><center>{{ line}}</center></h1></span><br/>
+{% endfor %}
+{% for line in poem %}
+    <span class="text-black-50 col-12 col-md-6"><center>{{ line}}</center></span><br/>
+{% endfor %}
+
+{% endblock %}
